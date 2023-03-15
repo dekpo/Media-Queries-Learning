@@ -17,6 +17,10 @@
                 width: 100%;
         }
 
+        .d-none{
+            display: none;
+        }
+
         .row::after{
             content: "";
             clear: both;
@@ -27,7 +31,9 @@
             padding: 15px;
         }
         
-        /* Pour les fenêtres dont la largeur est supérieure à 768px
+        /* TABLETTE
+        
+        Pour les fenêtres dont la largeur est supérieure à 768px
         ET inférieure à 991px
         Les colonnes sont définies */
         @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -52,10 +58,16 @@
             width: 25%;
         }
 
+        .d-md-block{
+            display: block;
+        }
+
         }
 
         
-        /* Pour les fenêtres dont la largeur est supérieure à 992px
+        /* DESKTOP
+
+         Pour les fenêtres dont la largeur est supérieure à 992px
         Les colonnes sont définies */
         @media only screen and (min-width: 992px){
             /* Pour le Desktop */
@@ -76,6 +88,10 @@
         }
         .col-lg-3{
             width: 25%;
+        }
+
+        .d-lg-block{
+            display: block;
         }
 
         }
@@ -124,6 +140,12 @@
             padding: 10px;
         }
 
+        .ads{
+            background-color: red;
+            color: white;
+            padding: 15px;
+        }
+
     </style>
 
 </head>
@@ -156,6 +178,10 @@
                 <li>How ?</li>
             </ul>
         </div>
+    </section>
+
+    <section class="ads d-none d-md-block d-lg-block">
+        ICI LA PUB
     </section>
 
     <footer>
