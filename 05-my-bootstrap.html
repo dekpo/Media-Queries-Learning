@@ -12,6 +12,11 @@
             box-sizing: border-box;
         }
 
+        .img-fluid{
+            width: 100%;
+            height: auto;
+        }
+
          /* colonne du mobile d'abord */
          [class*="col"]{
                 width: 100%;
@@ -96,6 +101,7 @@
 
         }
 
+
         /* CUSTOM CSS */
         html{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -146,6 +152,16 @@
             padding: 15px;
         }
 
+        .hero{
+            width: 100%;
+            height: 200px;
+            background-color: #cccccc;
+            background-image: url("https://www.lesdebrouillards.com/wp-content/uploads/2019/05/peur-montagne-russe.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0 ;
+        }
+
     </style>
 
 </head>
@@ -153,6 +169,9 @@
     <header>
         <h1>Header</h1>
     </header>
+    <section class="hero">
+
+    </section>
     <section class="row">
 
         <nav>
@@ -167,8 +186,11 @@
         <div class="col col-md-6 col-lg-6">
             <h2>Home of the Responsive Web Design</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae a iste facere ab autem architecto minus earum quis? Voluptates adipisci id reprehenderit, voluptas qui pariatur error neque cupiditate omnis architecto accusamus suscipit, enim dolores sequi officiis, beatae esse quas laudantium soluta nostrum exercitationem consequatur eligendi laboriosam sit? Dolorem, veniam sunt, voluptatibus quidem vero esse reprehenderit soluta, minima repellendus corrupti rerum dolor laudantium delectus quos officia sit sequi deleniti exercitationem nemo ipsa? Modi laudantium dolore, saepe delectus quibusdam atque nesciunt eum, sunt numquam officiis ipsum eius! Vero praesentium tenetur ullam animi. Exercitationem expedita, adipisci a magni, assumenda reprehenderit esse non, in dolore qui amet nobis numquam dolorem incidunt maiores corporis ipsa repellendus modi sint? Eius cumque numquam natus quae alias dolorem pariatur suscipit voluptas eum porro harum veniam, quidem, necessitatibus ipsa! Quam alias aliquid accusamus aspernatur veritatis autem sint? Sit voluptas optio alias? Ullam odio tempore tempora eligendi voluptatum voluptas ratione, provident deserunt laudantium dignissimos, distinctio vitae?</p>
+            
         </div>
-
+        <p>
+        <img class="img-fluid" src="https://www.pierre-giraud.com/wp-content/uploads/2019/05/styles-css-element-style-html.png" alt="css coding">
+        </p>
         <div class="col col-md-12 col-lg-3 right">
             <h3>Side Menu</h3>
             <ul>
@@ -178,6 +200,14 @@
                 <li>How ?</li>
             </ul>
         </div>
+    </section>
+
+    <section>
+        <picture>
+            <source srcset="https://www.lesdebrouillards.com/wp-content/uploads/2019/05/peur-montagne-russe.jpg" media="(max-width:768px)" >
+            <source srcset="https://www.lesdebrouillards.com/wp-content/uploads/2019/05/peur-montagne-russe.jpg" media="(max-width:768px)" >
+            <img src="https://www.pierre-giraud.com/wp-content/uploads/2019/05/styles-css-element-style-html.png" alt="Coding CSS">
+        </picture>
     </section>
 
     <section class="ads d-none d-md-block d-lg-block">
